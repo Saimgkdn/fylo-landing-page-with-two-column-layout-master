@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --Very-Dark-Blue: hsl(243, 62%, 19%);
+  --Desaturated-Blue: hsl(238, 22%, 44%);
+  --Bright-Blue: hsl(224, 93%, 58%);
+  --Moderate-Cyan: hsl(170, 45%, 43%);
+  --Light-Grayish-Blue: hsl(240, 75%, 98%);
+  --Light-Gray: hsl(0, 0%, 75%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+/* ------------- HEADER ------------- */
+
+.header {
+  max-width: 1350px;
+  margin: 32px auto;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 90%;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: var(--Desaturated-Blue);
+}
+
+/* ------------- HERO ------------- */
+.section-hero {
+  margin-top: 50px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 140px;
+  gap: 50px;
+}
+
+.h-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  color: var(--Very-Dark-Blue);
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: var(--Very-Dark-Blue);
+  font-weight: 500;
+}
+
+.h-input {
+  padding: 10px;
+  width: 50%;
+  border-radius: 3px;
+  border: 1px solid #000;
+}
+
+.h-button {
+  padding: 11px;
+  width: 30%;
+  margin-left: 10px;
+  background-color: var(--Bright-Blue);
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.h-button:hover,
+.h-button:active {
+  background-color: hsla(224, 93%, 58%, 0.753);
+  cursor: pointer;
+}
+
+.h-image img {
+  max-width: 100%;
+}
+
+/* ------------- HOW WORKS ------------- */
+
+.section-how-works {
+  background: url(images/bg-curve-desktop.svg) no-repeat center center/cover;
+  margin-top: 80px;
+}
+
+.how-works {
+  display: flex;
+  padding-top: 150px;
+  padding-bottom: 120px;
+  gap: 50px;
+}
+
+.hw-info {
+  width: 110%;
+}
+
+.hw-image {
+  width: 90%;
+}
+
+.hw-image img {
+  width: 100%;
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin-top: 45px;
+}
+
+.testimonial p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.hw-link {
+  color: var(--Moderate-Cyan);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px solid var(--Moderate-Cyan);
+}
+
+.hw-link:hover,
+.hw-link:active {
+  color: hsla(170, 45%, 43%, 0.71);
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar img {
+  border-radius: 50%;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.author p {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.author span {
+  color: var(--Light-Gray);
+  font-size: 12px;
+}
+
+/* ------------- SİGN-UP ------------- */
+
+.section-sign-up {
+  background-color: var(--Desaturated-Blue);
+  padding: 90px 0;
+}
+
+.sign-up {
+  display: flex;
+  gap: 200px;
+}
+
+.text {
+  width: 40%;
+}
+
+h2 {
+  font-size: 35px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.text p {
+  font-size: 16px;
+  color: #ffffffb6;
+}
+
+.sign-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sign-form input {
+  padding: 15px;
+  border-radius: 3px;
+  border: none;
+  max-width: 80%;
+}
+
+.sign-form button {
+  padding: 15px;
+  width: 35%;
+  border-radius: 3px;
+  border: none;
+  background-color: var(--Bright-Blue);
+  color: #fff;
+  font-weight: 600;
+}
+
+.sign-form button:hover,
+.sign-form button:active {
+  background-color: hsla(224, 93%, 58%, 0.763);
+  cursor: pointer;
+}
+
+/* ------------- FOOTER ------------- */
+
+.footer {
+  background-color: var(--Very-Dark-Blue);
+  padding: 100px 0;
+}
+
+.phone {
+  display: flex;
+  gap: 10px;
+  align-items: self-start;
+}
+
+.maill {
+  display: flex;
+  gap: 20px;
+  align-items: self-start;
+}
+
+.s-1 p {
+  color: #fff;
+  font-size: 14px;
+}
+
+.s-1 img {
+  width: 16px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.contacts li {
+  list-style: none;
+  line-height: 2;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.s-4 img {
+  width: 30px;
+}
+
+.s-4 {
+  height: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.imgg {
+  display: block;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo img {
+    width: 80px;
+  }
+
+  .nav ul {
+    gap: 20px;
+    font-size: 14px;
+  }
+
+  .header {
+    margin: 32px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .mail {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .h-input,
+  .h-button {
+    width: 100%;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 32px;
+  }
+
+  .how-works {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .sign-up {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .sign-form {
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .sign-form input {
+    max-width: 100%;
+  }
+
+  .sign-form button {
+    width: 100%;
+  }
+
+  .contacts {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .s-4 {
+    justify-content: center;
+  }
+
+  .footer {
+    padding: 50px 0;
+  }
+}
